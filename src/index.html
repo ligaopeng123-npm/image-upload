@@ -26,8 +26,12 @@
         }, {
             name: '666.png',
             url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-        }]
-        document.querySelector('#upload').setAttribute('file-list', JSON.stringify(fileList));
+        }];
+        const upload = document.querySelector('#upload');
+        upload.setAttribute('file-list', JSON.stringify(fileList));
+        upload.addEventListener('uploadChange', ({detail}) => {
+            console.log(detail);
+        })
     }
 </script>
 </body>
