@@ -31,7 +31,13 @@
         upload.setAttribute('file-list', JSON.stringify(fileList));
         upload.addEventListener('uploadChange', ({detail}) => {
             console.log(detail);
-        })
+        });
+        upload.addEventListener('afterUpload', ({detail}) => {
+            console.log(detail);
+        });
+        upload.addEventListener('afterDelete', ({detail}) => {
+            console.log(detail);
+        });
     }
 </script>
 </body>
