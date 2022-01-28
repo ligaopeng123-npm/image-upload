@@ -143,7 +143,7 @@ export const template = (config: ImageUploadConfig) => {
 			    <div id="screenshot-upload-target" class="target" 
 			         readonly="true" contenteditable="true">
 			         <span>
-			             光标选中后“Ctrl + A”复制截图
+			             光标选中后“Ctrl + V”复制截图
                      </span>
                     </div>
 			    <div id="screenshot-upload-bth">
