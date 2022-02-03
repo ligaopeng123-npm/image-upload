@@ -1,8 +1,8 @@
-import {isString, parentByExpected} from '@gaopeng123/utils';
+import {isString} from '@gaopeng123/utils.types';
+import {parentByExpected} from '@gaopeng123/utils.object';
+import {blob2Base64} from "@gaopeng123/utils.file";
 import {isDelIcon, isPictureImg, isPictureItem, openToPreviewBase64} from "./utils";
-import {blob2Base64} from "./convert";
-import {pictureTemplate, template} from "./template";
-import {ImageUploadConfig} from "./type";
+import {pictureTemplate, template, ImageUploadConfig} from "./template";
 import {initMsg} from './message';
 
 export default class ImageUpload extends HTMLElement {

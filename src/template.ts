@@ -11,7 +11,19 @@
  **********************************************************************/
 import {getSize} from "./utils";
 import {delIcon, uploadIcon} from "./assets";
-import {ImageUploadConfig} from "./type";
+
+export type ImageUploadConfig = {
+    width?: string | number;
+    height?: string | number;
+    'picture-width'?: string | number;
+    'picture-height'?: string | number;
+    action?: string;
+    'list-type'?: 'picture-card' | 'picture';
+    multiple?: boolean;
+    accept?: string;
+    'max-count'?: number;
+    'file-list'?: any[];
+}
 
 export const template = (config: ImageUploadConfig) => {
     const {width, height, accept, multiple} = config;

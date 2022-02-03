@@ -18,14 +18,16 @@
         "watch": "webpack --watch",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": ["image", "upload"],
+    "keywords": [
+        "image",
+        "upload"
+    ],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.14.3",
         "@babel/plugin-proposal-class-properties": "^7.13.0",
         "@babel/preset-env": "^7.14.4",
-        "@gaopeng123/utils": "^0.2.6",
         "@size-limit/preset-small-lib": "^5.0.1",
         "babel-loader": "^8.2.2",
         "copy-webpack-plugin": "^9.0.1",
@@ -41,5 +43,9 @@
         "webpack-cli": "^4.7.0",
         "webpack-dev-server": "^3.11.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@gaopeng123/utils.file": "^0.3.4",
+        "@gaopeng123/utils.object": "^0.3.4",
+        "@gaopeng123/utils.types": "^0.3.4"
+    }
 }
